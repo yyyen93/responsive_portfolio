@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio</title>
+    <link rel="shortcut icon" href="./assets/linkedin.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/queries/query.css">
 </head>
 <body>
-    
+    <!-- Desktop navigation -->
+    <nav id="desktop-nav">
+        <div class="logo"><img src="./assets/logo.png" alt="logo"></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>   
+    <!-- Mobile navigation -->
+    <nav id="mobile-nav">
+        <div class="logo"><img src="./assets/logo.png" alt="logo"></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onClick="toggleMenu()">
+                <!-- lines of the hamburger menu -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Actual links when toggleMenu() executed -->
+            <div class="menu-links">
+                <li><a onClick="toggleMenu()" href="#home">Home</a></li>
+                <li><a onClick="toggleMenu()" href="#about">About Me</a></li>
+                <li><a onClick="toggleMenu()" href="#skill">Skills</a></li>
+                <li><a onClick="toggleMenu()" href="#project">Projects</a></li>
+                <li><a onClick="toggleMenu()" href="#contact">Contact Me</a></li>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
