@@ -1,0 +1,6 @@
+BEM (Block Element Modifier):
+
+BEM is one of the most widely used naming conventions. It divides class names into three parts: Block, Element, and Modifier.
+Block: Represents a high-level component or module (e.g., .button).
+Element: Represents a part or subcomponent of the block (e.g., .button__text).
+Modifier: Represents variations or different states of a block or element (e.g., .button--primary).

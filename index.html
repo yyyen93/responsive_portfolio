@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio</title>
-    <link rel="shortcut icon" href="./assets/linkedin.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/queries/query.css">
 </head>
 <body>
     <!-- Desktop navigation -->
-    <nav id="desktop-nav">
+    <nav class="desktop-nav">
         <div class="logo"><img src="./assets/logo.png" alt="logo"></div>
         <div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skill">Skills</a></li>
                 <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>   
     <!-- Mobile navigation -->
-    <nav id="mobile-nav">
+    <nav class="mobile-nav">
         <div class="logo"><img src="./assets/logo.png" alt="logo"></div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onClick="toggleMenu()">
@@ -33,17 +33,35 @@
                 <span></span>
             </div>
             <!-- Actual links when toggleMenu() executed -->
-            <div class="menu-links">
+            <div class="hamburger__menu-links">
                 <li><a onClick="toggleMenu()" href="#home">Home</a></li>
-                <li><a onClick="toggleMenu()" href="#about">About Me</a></li>
+                <li><a onClick="toggleMenu()" href="#about">About</a></li>
                 <li><a onClick="toggleMenu()" href="#skill">Skills</a></li>
                 <li><a onClick="toggleMenu()" href="#project">Projects</a></li>
-                <li><a onClick="toggleMenu()" href="#contact">Contact Me</a></li>
+                <li><a onClick="toggleMenu()" href="#contact">Contact</a></li>
             </div>
-
         </div>
-
     </nav>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Charlotte Tan</h1>
+            <p class="section__text__p2">Fullstack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onClick="window.open('./assets/resume_tan.pdf')">My CV</button>
+                <button class="btn btn-color-1" onClick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/github.png" alt="github profile" class="icon" onClick="location.href='https://github.com/yyyen93'">
+                <img src="./assets/linkedin.png" alt="linkedin profile" class="icon" onClick="location.href='https://linkedin.com/[userID]'">
+            </div>
+        </div>
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="profile picture">
+        </div>
+    </section>
 
 
     <script src="./js/script.js"></script>

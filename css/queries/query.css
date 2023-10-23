@@ -1,0 +1,11 @@
+@media screen and (max-width: 1200px){
+    /* Desktop nav */
+    .desktop-nav{
+        display: none;
+    }
+
+    /* Mobile nav */
+    .mobile-nav{
+        display: flex;
+    }
+}
