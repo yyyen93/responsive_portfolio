@@ -172,6 +172,7 @@ section{
     height: 80%;
 }
 
+
 /* -------------------------------------- */
 /* PROFILE SECTION */
 .profile{
@@ -253,7 +254,7 @@ section{
     background: rgb(0,0,0);
 }
 
-.btn-color-2{
+.btn-color-2{ 
     background:none;
 }
 
@@ -282,29 +283,13 @@ section{
     margin: 2.5rem 0;
 }
 
-.about-pic{
-    border-radius: 2rem;
-
-}
-
-.title-about{
-    font-size: 2.6rem;
-    text-align: center;
-}
-
-.section__text__about{
-    text-align: center;
-    font-size:1.2rem;
-    margin-bottom: 1rem;
-}
-
 .arrow{
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
 }
 
-.details-container{
+.details-containers{
     padding: 1.5rem;
     flex: 1;
     background: #fff;
@@ -318,4 +303,33 @@ section{
 .text-container{
     line-height: 1.5;
     text-indent: 2rem;
+}
+
+
+/* -------------------------------------- */
+/* EXPERIENCE SECTION */
+.experience{
+    position:relative;
+}
+
+.experience-sub-title{
+    color: rgb(85,85,85);
+    font-weight: 600;
+    font-size; 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align:initial;
+    flex-wrap: wrap;
+    flex-direction:row;
+    gap: 2.5rem;
+    justify-content: space-around;
 }
