@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: 'League Spartan', sans-serif;
-    background: #C5FAD9;
+    /* background: #C5FAD9; */
 }
 
 p {
@@ -366,3 +366,6 @@ article {
 article .icon {
     cursor: default;
 }
+
+/* -------------------------------------- */
+/* PROJECT SECTION */
